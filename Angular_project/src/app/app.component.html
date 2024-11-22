@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+  <!-- {{pro|json}} -->
+  <div class="header">
+    <a routerLink="home" *ngIf="adminlogin==false">
+  <div class="logo">
+<h3>GadgetZone</h3>
+</div></a>
+
+
+
+<a routerLink="admin" *ngIf="adminlogin==true">
+  <div class="logo">
+<h3>GadgetZone</h3>
+</div></a>
+
+
+<div class="search-box"  *ngIf="adminlogin==false"   >
+  <span><input type="search" placeholder="search" [(ngModel)]="searchText" (keyup.enter)="search()"></span>
+  <!-- <i class="fa fa-search search"></i> -->
+  
+</div>
+
+
+
+<div class="login" >
+  
+
+  <div class="dropdown">
+ <li class="dropdownbtn" ><i class="fa fa-sort-desc" >My Account</i></li>
+    <div class="dropdown-content" *ngIf="loggedInUser!==null" >
+      <a routerLink="/userorderview"  *ngIf="adminlogin==false">Orders</a>
+      <!-- <a href="#"><i class="fa fa-heart"  *ngIf="adminlogin==false"> WishList</i></a> -->
+     <a (click)="logout()"  *ngIf="loggedInUser!==null "  style="cursor:pointer;">Logout</a>
+      
+    </div>
+  </div>
+  
+  
+
+
+  <div>
+    <i class="fa fa-user-o" >&nbsp;&nbsp;{{loggedInUser}}</i>
+  </div>
+  <div *ngIf="loggedInUser==null">
+  <a routerLink="login">LOGIN</a> 
+
+</div>
+
+
+
+
+
+<ng-container  *ngIf="adminlogin==false" >
+    <div class="shopping-cart">
+    <div class="cart-icon" >
+      
+  </div>
+  </div>
+
+  <a routerLink="cart">
+    <div class="shopping-cart">
+    <div class="cart-icon" >
+      <i class="fa fa-cart-arrow-down"></i><div class="badge btn-danger" style="top:-20px;right:-0px;position: relative;"></div>
+  </div>
+  </div></a>
+</ng-container>
+
+</div>
+
+
+
+
+</div>
+<div class="services">
+  <ul>
+    <li routerLink="mobiles">Mobiles</li>
+    <li routerLink="laptops">Laptops</li>
+    <li routerLink="telivision">Television</li>
+    <li routerLink="computeraccesories">Computer Accessories</li>
+    <li routerLink="smartwatches">Smart Watches</li>
+    <li  routerLink="headphones">Headphones</li>
+  </ul>
+
+</div>
+
+
+
+<app-Loader *ngIf="isLoading"></app-Loader>
+
+
+<router-outlet></router-outlet>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a routerLink="">about us</a></li>
+          <li><a routerLink="">our services</a></li>
+          <li><a routerLink="">privacy policy</a></li>
+          <li><a routerLink="">feedback</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a routerLink="">FAQ</a></li>
+          <li><a routerLink="">shipping</a></li>
+          <li><a routerLink="">returns</a></li>
+          <li><a routerLink="">order status</a></li>
+          <li><a routerLink="">payment options</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a routerLink="">best offers</a></li>
+          <li><a routerLink="">deals of the day</a></li>
+          <li><a routerLink="">Mobiles</a></li>
+          <li><a routerLink="">Electronic Gadgets</a></li>
+          <li><a routerLink="">Televisions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-col">
+          <a routerLink=""><i class="fa fa-facebook"></i></a>
+          <a routerLink=""><i class="fa fa-twitter"></i></a>
+          <a routerLink=""><i class="fa fa-instagram"></i></a>
+          <a routerLink=""><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>

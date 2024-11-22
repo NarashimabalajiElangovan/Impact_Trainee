@@ -1,0 +1,197 @@
+
+  
+  
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    justify-content: center;
+    position:sticky;
+  
+    
+
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:110px;
+
+    
+    
+  }
+  hr{
+    color:black;
+  }
+ 
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .circle {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 12px;
+    
+  }
+  
+  .nav-link.active .circle {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+.checkout-page {
+    padding: 20px;
+    background-color: #f7f7f7;
+  
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+ 
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+ 
+  .form-container  .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background:linear-gradient(45deg,#485461, #c430d7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+    margin-left:60%;
+  }
+  .form-container .button input:hover{
+    background:linear-gradient(45deg,#5B6467, #a729b8);
+  }
+  
+  .container{
+     padding:20px;
+     display:flex;
+     gap:10%;
+  }
+.adress-select{
+ 
+  width:800px;
+  padding:3%;
+  box-shadow: 0 4px 6px rgba(0.368, 0.368, 0.368, 0.368);
+
+}
+
+.edit-logo{
+  justify-content: right;
+  display: flex;
+  cursor:pointer;
+}
+
+.delete-button{
+  justify-content: right;
+  display: flex;
+  cursor:pointer;
+
+}
+
+.delete-button:hover{
+  color:#007185;
+}
+  .checkout-page{
+    width:600px;
+  }
+  .error{
+  
+    
+    border-radius: 2px;
+    color: red;
+    padding: 0px 0px 0px 5px;
+  }
+ 
+  .optionadress{
+    display:flex
+  }
+
+  .form-container input {
+    width:300px;
+    justify-content: center;
+    display: flex;
+   
+  }
+
+  .form-container{
+    border:1px solid rgba(0, 0, 0, 0.192);
+    width:53%;
+    display:flex;
+margin-left: 8%;
+
+
+  }
+
+form {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+justify-content: center;
+justify-content: space-between;
+padding:60px;
+}
+
+.address-data{
+  font-family: sans-serif;
+  font-weight:300;
+}
+
+.selectbutton input{
+  background:linear-gradient(45deg,#485461, #c430d7);
+  color:white;
+  border:none;
+
+}

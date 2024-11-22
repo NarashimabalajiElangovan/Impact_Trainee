@@ -1,0 +1,276 @@
+
+<div class="button-1">
+  <ul>
+ <li> <button  (click)="mobilesdata()" >Mobiles</button> </li>
+
+  <li> <button (click)="laptopdata()" >Laptops</button> </li>
+
+  <li> <button (click)="televisiondata()">Television</button> </li>
+
+  <li> <button (click)="computeraccesories()" >Computer Accessories</button> </li>
+
+  <li> <button >Headphones</button> </li>
+
+  <li> <button >Smart Watches</button> </li>
+
+</ul>
+
+
+</div>
+
+
+<div class="admin-container">
+
+
+  
+<div class="form-continer">
+  <div class="form">
+  <h2>Add Product</h2>
+  <form [formGroup]="Productaddform"  >
+    <div class="form-group">
+      <label for="name">Model Name:</label>
+
+      <!-- <div class="form-group"><input type="text" name="title" formControlName="title"  placeholder="title"></div> -->
+
+      <input type="text" id="name" name="name" for placeholder="Enter Name of the product " formControlName="model" >
+    </div>
+    <div class="form-group">
+      <label for="description">Description1:</label>
+      <textarea id="description" name="description" formControlName="description1"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description2:</label>
+      <textarea id="description" name="description" formControlName="description2"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" formControlName="price"  >
+    </div>
+    <div class="form-group">
+      <label for="discount">DiscountPrice:</label>
+      <input type="number" id="discountprice" name="discountprice" formControlName="discount"  >
+    </div>
+
+    <div class="form-group">
+      <label for="discount">Delivery:</label>
+      <input type="text" id="delivery" name="delivery" formControlName="delivery"  >
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" formControlName="quantity"  >
+    </div>
+
+<!--     
+    <div class="form-group">
+      <label for="ID">ID</label>
+      <input type="number" id="ID" name="id" formControlName="emailid"  >
+    </div> -->
+
+    <div class="form-group">
+      <label for="image">Image:</label>
+      <input type="text" id="image" name="image" formControlName="image" >
+    </div>
+
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      <input type="number" id="rating" name="rating" formControlName="rating"  >
+    </div>
+
+    <div class="form-group">
+      <label for="availoffer1">availoffer1</label>
+      <input type="text" id="availoffer1" name="availoffer1" formControlName="availoffer1">
+    </div>
+
+    <div class="form-group">
+      <label for="availoffer2">availoffer2</label>
+      <input type="text" id="availoffer2" name="availoffer2" formControlName="availoffer2">
+    </div>
+
+    <div class="form-group">
+      <label for="availoffer3">availoffer3</label>
+      <input type="text" id="availoffer3" name="availoffer3" formControlName="availoffer3">
+    </div>
+
+    <th>Specification</th>
+    <br>
+    <div class="form-group">
+      <label for="box">Box</label>
+      <input type="text" id="box" name="box" formControlName="box">
+    </div>
+
+    <div class="form-group">
+      <label for="OTGCompaitable">OTGCompaitable</label>
+      <input type="text" id="OTGCompaitable" name="OTGCompaitable" formControlName="OTGCompaitable">
+    </div>
+
+    <div class="form-group">
+      <label for="Touchscreen">Touchscreen</label>
+      <input type="text" id="Touchscreen" name="Touchscreen" formControlName="Touchscreen">
+    </div>
+
+    <div class="form-group">
+      <label for="SimType">SimType</label>
+      <input type="text" id="SimType" name="SimType" formControlName="SimType">
+    </div>
+
+    <div class="form-group">
+      <label for="ModelNumber">ModelNumber</label>
+      <input type="text" id="ModelNumber" name="ModelNumber" formControlName="ModelNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="ModelName">ModelName</label>
+      <input type="text" id="ModelName" name="ModelName" formControlName="ModelName">
+    </div>
+    
+    <div class="form-group">
+      <label for="Resolution">Resolution</label>
+      <input type="text" id="Resolution" name="Resolution" formControlName="Resolution">
+    </div>
+
+     
+    <div class="form-group">
+      <label for="InternalStorage">InternalStorage</label>
+      <input type="text" id="InternalStorage" name="InternalStorage" formControlName="InternalStorage">
+    </div>
+
+    <div class="form-group">
+      <label for="HybridSim">HybridSim</label>
+      <input type="text" id="HybridSim" name="HybridSim" formControlName="HybridSim">
+    </div>
+
+    <div class="form-group">
+      <label for="HybridSim">PrimaryCamera</label>
+      <input type="text" id="PrimaryCamera" name="PrimaryCamera" formControlName="PrimaryCamera">
+    </div>
+
+    <div class="form-group">
+      <label for="MemoryCardSlotType">MemoryCardSlotType</label>
+      <input type="text" id="MemoryCardSlotType" name="MemoryCardSlotType" formControlName="MemoryCardSlotType">
+    </div>
+
+    <div class="form-group">
+      <label for="BatteryCapacity">BatteryCapacity</label>
+      <input type="text" id="BatteryCapacity" name="BatteryCapacity" formControlName="BatteryCapacity">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="NetworkType">NetworkType</label>
+      <input type="text" id="NetworkType" name="NetworkType" formControlName="NetworkType">
+    </div>
+
+    <div class="form-group">
+      <label for="BrowseType">BrowseType</label>
+      <input type="text" id="BrowseType" name="BrowseType" formControlName="BrowseType">
+    </div>
+
+    <div class="form-group">
+      <label for="HybridSim">HybridSim</label>
+      <input type="text" id="HybridSim" name="HybridSim" formControlName="HybridSim">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="colour">colour</label>
+      <input type="text" id="colour" name="colour" formControlName="colour">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="RAM">RAM</label>
+      <input type="text" id="RAM" name="RAM" formControlName="RAM">
+    </div>
+
+
+  <div class="form-group">
+      <label for="SupportedNetworks">SupportedNetworks</label>
+      <input type="text" id="SupportedNetworks" name="SupportedNetworks" formControlName="SupportedNetworks">
+    </div>
+    
+    <div class="form-group">
+      <label for="BatteryCapacity">BatteryCapacity</label>
+      <input type="text" id="BatteryCapacity" name="BatteryCapacity" formControlName="BatteryCapacity">
+    </div>
+
+   
+    <div class="form-group">
+      <label for="WarrantySummary">WarrantySummary</label>
+      <input type="text" id="WarrantySummary" name="WarrantySummary" formControlName="WarrantySummary">
+    </div>
+    <button type="submit" [disabled]="!this.Productaddform.valid" *ngIf="Edit!==false" (click)="addProduct()">{{this.buttontext}}</button>
+   
+    <button type="submit" [disabled]="!this.Productaddform.valid" *ngIf="Edit==false" (click)="update()">{{this.buttontext}}</button>
+
+
+  </form>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+  <div class="productconatiner">
+
+  <div class="card">
+
+    
+          <ng-container *ngFor="let item of mobileproduct" >
+
+          <div class="card1" style="cursor:pointer;" >
+           <img src="{{item.image}}" alt="" class="product-image">
+        
+           
+           <div class="rating-tag">
+              <span class="rating-icon">★</span>
+              <span class="rating-value">{{ item.rating }}</span>
+            </div>
+          <div class="model-text">
+              {{item.model}}
+          </div>
+
+          <div>
+              {{item.description}}
+              {{item.description1}}
+          </div>
+          <div class="model-price">
+              ₹{{item.price }}     <s style="list-style: none;color: green;">{{item.discount |currency:'INR'}}</s>
+
+          </div>
+
+          <div class="function-container">
+            <i class="fa fa-pencil fa-2x" (click)="onEdit(item)" ></i>
+            <i class="fa fa-trash-o fa-2x"   (click)="datadel(item)"></i>
+           
+
+         
+
+        </div>
+
+          </div>
+         
+          
+
+      </ng-container>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  </div>
+
+  
+
+
+

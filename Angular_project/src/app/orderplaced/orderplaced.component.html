@@ -1,0 +1,101 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Order Confirmation</title>
+  
+</head>
+<body>
+  <h1>Order Confirmation</h1>
+  
+  <div class="order-details">
+    <h2>Order Details</h2>
+    <p><strong>Order ID:</strong> 123456789</p>
+    <p><strong>Date:</strong> {{this.gettime}}</p>
+    
+  <strong>Shipping Address:</strong><div *ngIf="selectedAddress">
+
+      <p>{{selectedAddress.username}}</p>
+      <p>{{selectedAddress.address}}</p>
+      <p>{{selectedAddress.city}}</p>
+    
+    
+    </div>
+
+   
+
+     
+    
+  </div>
+  
+  <div class="order-summary">
+    <h2>Order Summary</h2>
+    
+
+
+
+
+
+  <div class="card-table">
+
+    <div class="cart-products">
+
+      <table class="table table-responsive">
+         
+        <thead>
+          <tr>
+            <th>SN.O</th>
+            <th>Product Name</th>
+            <th>productImage</th>
+            <th>Description</th>
+            <th>price</th>
+            <th>quantity</th>
+            <th>Total</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of buyproduct;let i =index">
+         <td>{{i+1}}</td>
+         <td>{{item.model}}</td>
+         <td style="width:200px;"><img src="{{item.image}}" alt=""></td>
+         <td>{{item.description}}</td>
+         <td>₹{{item.price}}</td>
+
+        
+        
+        
+      
+
+         <td>{{item.quantity }}</td>
+
+         <td>
+
+          {{item.price*item.quantity}}
+                </td>
+        </tr>
+
+
+        </tbody>
+
+      
+           
+        <tr>
+          <td  colspan="4"></td>
+
+          <td> <strong>GrandTotal  {{ getCartTotal()}}</strong> </td>
+
+        </tr>
+
+      </table>
+  
+
+    </div>
+  </div>
+
+
+  
+  <div class="thank-you">
+    <h2>Thank you for your order!</h2>
+    <p>Your order has been placed successfully. We will process it shortly.</p>
+  </div>
+

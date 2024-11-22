@@ -1,0 +1,101 @@
+.container img{
+  width:150px;
+  height:150px;
+  justify-content: center;
+  
+ 
+}
+.row{
+  gap:70px;
+justify-content: center;
+padding:30px;  
+
+}
+
+.carousel-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  
+}
+.carousel {
+  padding: 0;
+  margin: -20px;
+  overflow-x: hidden;
+ 
+}
+
+.model-text{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.model-price{
+ 
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.rating-tag {
+
+  
+ width:50px;
+  background-color: #00c853; /* Green color for the tag */
+  color: #fff; /* White text color for the tag */
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+ 
+
+}
+
+.wishlist{
+ 
+ display:block;
+ position: absolute;
+ margin-right: 20%;
+ 
+
+}
+.rating-icon {
+  margin-left: 2px;
+  
+}
+.banner-heading-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #333333;
+  position: relative;
+}
+
+
+
+.banner-container2 {
+  position: relative;
+  width: 30%;
+  height: 50px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.banner-heading2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding:2%;
+}
+
+
+
+
+
+

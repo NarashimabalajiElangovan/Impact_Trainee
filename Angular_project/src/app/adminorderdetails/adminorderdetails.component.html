@@ -1,0 +1,46 @@
+<table>
+<div class="table-card">
+    <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>EmailID</th>
+            <th>Product Image</th>
+            <th>Model</th>
+            <th>Quantity</th>
+            <th>product Price</th>
+            <th>Grand Total</th>
+            <th>Payment</th>
+            <th>Address</th>
+            <th>Approval</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of this.product;let i =index">
+       <td>{{i+1}}</td>
+       <td>{{item.email}}</td>
+       <td id="itemimage"><img src="{{item.image}}" alt=""></td>
+       
+<td>
+    <li>{{item.detailmodel}}</li>
+        
+</td>
+        
+       <td>{{item.quantity}}</td>
+       <td>{{ item.price}}</td>
+       <td>{{item.quantity * item.price}}</td>
+      
+       <td>{{item.Payment}}</td>
+       <td>{{item.Address}}</td>
+
+       <td><button (click)="sendEmail(item)"  (click)="status(item)" >{{item.Orderstatus}}</button></td>
+
+       
+      </tr>
+
+<tr>
+
+</div>
+
+
+</table>
